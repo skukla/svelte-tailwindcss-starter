@@ -2,7 +2,7 @@
 	import Tailwindcss from "./Tailwindcss.svelte";
 </script>
 
-<style>
+<style type="text/postcss">
 h1 {
 	@apply text-2xl;
 }
