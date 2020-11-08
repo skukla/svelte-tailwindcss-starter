@@ -3,7 +3,12 @@
 </script>
 
 <style>
+h1 {
+	@apply text-2xl;
+}
 </style>
 
 <Tailwindcss />
-<main />
+<main>
+	<h1>Hello!</h1>
+</main>
