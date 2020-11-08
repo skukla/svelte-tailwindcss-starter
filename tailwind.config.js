@@ -2,14 +2,12 @@ module.exports = {
     purge: {
         mode: 'all',
         content: ['./**/**/*.html', './**/**/*.svelte'],
-
         options: {
             whitelistPatterns: [/svelte-/],
             defaultExtractor: (content) =>
                 [...content.matchAll(/(?:class:)*([\w\d-/:%.]+)/gm)].map(([_match, group, ..._rest]) => group),
         },
     },
-
     theme: {
         extend: {
             colors: {
@@ -42,8 +40,7 @@ module.exports = {
         }
     },
     variants: {},
-    plugins: [
-        require("tailwindcss"), 
+    plugins: [ 
         require('@tailwindcss/ui')
     ],
     future: {
